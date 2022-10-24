@@ -1,10 +1,16 @@
+#define PIN_LED 7
+
 void setup() {
-  pinMode(7,OUTPUT);
+  pinMode(PIN_LED, 1);
+  delay(1000);
 }
 
 void loop() {
-  digitalWrite(7, HIGH);
-  delay(100);
-  digitalWrite(7, LOW);
-  delay(100);
+  for (i=0;i<=5;i++) {
+    digitalWrite(PIN_LED, 0);
+    delay(100);
+    digitalWrite(PIN_LED, 1);
+    delay(100);
+  while(1) {
+  } // infinite loop
 }
